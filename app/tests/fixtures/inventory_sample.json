@@ -1,0 +1,646 @@
+{
+  "scan_time": "2026-09-28T12:00:00Z",
+  "resources": [
+    {
+      "asset_type": "compute.googleapis.com/Firewall",
+      "name": "//compute.googleapis.com/projects/example-project/global/firewalls/default-allow-icmp",
+      "data": {
+        "allowed": [
+          {
+            "IPProtocol": "icmp"
+          }
+        ],
+        "creationTimestamp": "2026-09-22T14:51:40.822-07:00",
+        "description": "Allow ICMP from anywhere",
+        "direction": "INGRESS",
+        "disabled": false,
+        "id": "7083399349079590531",
+        "logConfig": {
+          "enable": false
+        },
+        "name": "default-allow-icmp",
+        "network": "https://www.googleapis.com/compute/v1/projects/example-project/global/networks/default",
+        "priority": 65534,
+        "selfLink": "https://www.googleapis.com/compute/v1/projects/example-project/global/firewalls/default-allow-icmp",
+        "sourceRanges": [
+          "0.0.0.0/0"
+        ]
+      }
+    },
+    {
+      "asset_type": "compute.googleapis.com/Firewall",
+      "name": "//compute.googleapis.com/projects/example-project/global/firewalls/default-allow-internal",
+      "data": {
+        "allowed": [
+          {
+            "IPProtocol": "tcp",
+            "ports": [
+              "0-65535"
+            ]
+          },
+          {
+            "IPProtocol": "udp",
+            "ports": [
+              "0-65535"
+            ]
+          },
+          {
+            "IPProtocol": "icmp"
+          }
+        ],
+        "creationTimestamp": "2026-09-22T14:51:40.504-07:00",
+        "description": "Allow internal traffic on the default network",
+        "direction": "INGRESS",
+        "disabled": false,
+        "id": "4306566274816624259",
+        "logConfig": {
+          "enable": false
+        },
+        "name": "default-allow-internal",
+        "network": "https://www.googleapis.com/compute/v1/projects/example-project/global/networks/default",
+        "priority": 65534,
+        "selfLink": "https://www.googleapis.com/compute/v1/projects/example-project/global/firewalls/default-allow-internal",
+        "sourceRanges": [
+          "10.128.0.0/9"
+        ]
+      }
+    },
+    {
+      "asset_type": "compute.googleapis.com/Firewall",
+      "name": "//compute.googleapis.com/projects/example-project/global/firewalls/default-allow-rdp",
+      "data": {
+        "allowed": [
+          {
+            "IPProtocol": "tcp",
+            "ports": [
+              "3389"
+            ]
+          }
+        ],
+        "creationTimestamp": "2026-09-22T14:51:40.713-07:00",
+        "description": "Allow RDP from anywhere",
+        "direction": "INGRESS",
+        "disabled": false,
+        "id": "1036106952752449155",
+        "logConfig": {
+          "enable": false
+        },
+        "name": "default-allow-rdp",
+        "network": "https://www.googleapis.com/compute/v1/projects/example-project/global/networks/default",
+        "priority": 65534,
+        "selfLink": "https://www.googleapis.com/compute/v1/projects/example-project/global/firewalls/default-allow-rdp",
+        "sourceRanges": [
+          "0.0.0.0/0"
+        ]
+      }
+    },
+    {
+      "asset_type": "compute.googleapis.com/Firewall",
+      "name": "//compute.googleapis.com/projects/example-project/global/firewalls/default-allow-ssh",
+      "data": {
+        "allowed": [
+          {
+            "IPProtocol": "tcp",
+            "ports": [
+              "22"
+            ]
+          }
+        ],
+        "creationTimestamp": "2026-09-22T14:51:40.608-07:00",
+        "description": "Allow SSH from anywhere",
+        "direction": "INGRESS",
+        "disabled": false,
+        "id": "4214406687645189763",
+        "logConfig": {
+          "enable": false
+        },
+        "name": "default-allow-ssh",
+        "network": "https://www.googleapis.com/compute/v1/projects/example-project/global/networks/default",
+        "priority": 65534,
+        "selfLink": "https://www.googleapis.com/compute/v1/projects/example-project/global/firewalls/default-allow-ssh",
+        "sourceRanges": [
+          "0.0.0.0/0"
+        ]
+      }
+    },
+    {
+      "asset_type": "compute.googleapis.com/Network",
+      "name": "//compute.googleapis.com/projects/example-project/global/networks/default",
+      "data": {
+        "name": "default"
+      }
+    },
+    {
+      "asset_type": "iam.googleapis.com/ServiceAccountKey",
+      "name": "//iam.googleapis.com/projects/example-project/serviceAccounts/222222222222/keys/b60ac3c016cd573243da30b61b6d3bb833e9885a",
+      "data": {
+        "keyAlgorithm": "KEY_ALG_RSA_2048",
+        "keyOrigin": "GOOGLE_PROVIDED",
+        "keyType": "SYSTEM_MANAGED",
+        "name": "projects/example-project/serviceAccounts/111111111111-compute@developer.gserviceaccount.com/keys/b60ac3c016cd573243da30b61b6d3bb833e9885a",
+        "validAfterTime": "2026-09-23T19:47:18Z",
+        "validBeforeTime": "2026-10-09T19:47:18Z"
+      }
+    },
+    {
+      "asset_type": "iam.googleapis.com/ServiceAccountKey",
+      "name": "//iam.googleapis.com/projects/example-project/serviceAccounts/112542496057262410691/keys/0000000000000000000000000000000000000000",
+      "data": {
+        "keyAlgorithm": "KEY_ALG_RSA_2048",
+        "keyOrigin": "GOOGLE_PROVIDED",
+        "keyType": "SYSTEM_MANAGED",
+        "name": "projects/example-project/serviceAccounts/ci-runner@example-project.iam.gserviceaccount.com/keys/0000000000000000000000000000000000000000",
+        "validAfterTime": "2026-09-23T19:47:17Z",
+        "validBeforeTime": "2026-10-09T19:47:17Z"
+      }
+    },
+    {
+      "asset_type": "iam.googleapis.com/ServiceAccountKey",
+      "name": "//iam.googleapis.com/projects/example-project/serviceAccounts/114057590517244925722/keys/abc29b91c4c83725098259fd17b88a72959bf803",
+      "data": {
+        "keyAlgorithm": "KEY_ALG_RSA_2048",
+        "keyOrigin": "GOOGLE_PROVIDED",
+        "keyType": "SYSTEM_MANAGED",
+        "name": "projects/example-project/serviceAccounts/prowler-scanner@example-project.iam.gserviceaccount.com/keys/abc29b91c4c83725098259fd17b88a72959bf803",
+        "validAfterTime": "2026-09-23T19:47:17Z",
+        "validBeforeTime": "2026-10-09T19:47:17Z"
+      }
+    },
+    {
+      "asset_type": "storage.googleapis.com/Bucket",
+      "name": "//storage.googleapis.com/example-project-keda-demo-tfstate",
+      "data": {
+        "acl": [],
+        "autoclass": {},
+        "billing": {},
+        "cors": [],
+        "customPlacementConfig": {},
+        "defaultObjectAcl": [],
+        "encryption": {
+          "customerManagedEncryptionEnforcementConfig": {},
+          "customerSuppliedEncryptionEnforcementConfig": {},
+          "googleManagedEncryptionEnforcementConfig": {}
+        },
+        "hierarchicalNamespace": {},
+        "iamConfiguration": {
+          "bucketPolicyOnly": {
+            "enabled": true,
+            "lockedTime": "2026-12-21T21:49:31.138Z"
+          },
+          "publicAccessPrevention": "inherited",
+          "uniformBucketLevelAccess": {
+            "enabled": true,
+            "lockedTime": "2026-12-21T21:49:31.138Z"
+          }
+        },
+        "id": "example-project-keda-demo-tfstate",
+        "ipFilter": {
+          "publicNetworkSource": {},
+          "vpcNetworkSources": []
+        },
+        "kind": "storage#bucket",
+        "labels": {},
+        "lifecycle": {
+          "rule": []
+        },
+        "location": "US-CENTRAL1",
+        "locationType": "region",
+        "logging": {},
+        "metageneration": 3,
+        "name": "example-project-keda-demo-tfstate",
+        "objectRetention": {},
+        "owner": {},
+        "projectNumber": 111111111111,
+        "retentionPolicy": {},
+        "selfLink": "https://www.googleapis.com/storage/v1/b/example-project-keda-demo-tfstate",
+        "softDeletePolicy": {
+          "effectiveTime": "2026-09-22T21:49:31.000Z",
+          "hardDeletePause": {},
+          "retentionDurationSeconds": 604800
+        },
+        "storageClass": "STANDARD",
+        "timeCreated": "2026-09-22T21:49:31.138Z",
+        "updated": "2026-09-23T15:50:15.471Z",
+        "versioning": {},
+        "website": {}
+      }
+    },
+    {
+      "asset_type": "storage.googleapis.com/Bucket",
+      "name": "//storage.googleapis.com/example-project-tfstate",
+      "data": {
+        "acl": [],
+        "autoclass": {},
+        "billing": {},
+        "cors": [],
+        "customPlacementConfig": {},
+        "defaultObjectAcl": [],
+        "encryption": {
+          "customerManagedEncryptionEnforcementConfig": {},
+          "customerSuppliedEncryptionEnforcementConfig": {},
+          "googleManagedEncryptionEnforcementConfig": {}
+        },
+        "hierarchicalNamespace": {},
+        "iamConfiguration": {
+          "bucketPolicyOnly": {
+            "enabled": true,
+            "lockedTime": "2026-12-24T19:25:24.913Z"
+          },
+          "publicAccessPrevention": "enforced",
+          "uniformBucketLevelAccess": {
+            "enabled": true,
+            "lockedTime": "2026-12-24T19:25:24.913Z"
+          }
+        },
+        "id": "example-project-tfstate",
+        "ipFilter": {
+          "publicNetworkSource": {},
+          "vpcNetworkSources": []
+        },
+        "kind": "storage#bucket",
+        "labels": {},
+        "lifecycle": {
+          "rule": []
+        },
+        "location": "EUROPE-WEST1",
+        "locationType": "region",
+        "logging": {},
+        "metageneration": 2,
+        "name": "example-project-tfstate",
+        "objectRetention": {},
+        "owner": {},
+        "projectNumber": 111111111111,
+        "retentionPolicy": {},
+        "selfLink": "https://www.googleapis.com/storage/v1/b/example-project-tfstate",
+        "softDeletePolicy": {
+          "effectiveTime": "2026-09-25T19:25:24.000Z",
+          "hardDeletePause": {},
+          "retentionDurationSeconds": 604800
+        },
+        "storageClass": "STANDARD",
+        "timeCreated": "2026-09-25T19:25:24.913Z",
+        "updated": "2026-09-25T19:25:26.862Z",
+        "versioning": {
+          "enabled": true
+        },
+        "website": {}
+      }
+    }
+  ],
+  "iam": [
+    {
+      "asset_type": "cloudresourcemanager.googleapis.com/Project",
+      "name": "//cloudresourcemanager.googleapis.com/projects/111111111111",
+      "policy": {
+        "bindings": [
+          {
+            "members": [
+              "serviceAccount:service-111111111111@gcp-sa-aiplatform.iam.gserviceaccount.com"
+            ],
+            "role": "roles/aiplatform.serviceAgent"
+          },
+          {
+            "members": [
+              "serviceAccount:service-111111111111@gcp-sa-apigateway.iam.gserviceaccount.com"
+            ],
+            "role": "roles/apigateway.serviceAgent"
+          },
+          {
+            "members": [
+              "serviceAccount:service-111111111111@gcp-sa-apigateway-mgmt.iam.gserviceaccount.com"
+            ],
+            "role": "roles/apigateway_management.serviceAgent"
+          },
+          {
+            "members": [
+              "deleted:serviceAccount:keda-demo-gke-nodes@example-project.iam.gserviceaccount.com?uid=107823794086702970588",
+              "deleted:serviceAccount:keda-demo-gke-nodes@example-project.iam.gserviceaccount.com?uid=110508501851916550143"
+            ],
+            "role": "roles/artifactregistry.reader"
+          },
+          {
+            "members": [
+              "serviceAccount:service-111111111111@gcp-sa-artifactregistry.iam.gserviceaccount.com"
+            ],
+            "role": "roles/artifactregistry.serviceAgent"
+          },
+          {
+            "members": [
+              "deleted:serviceAccount:keda-demo-github-actions@example-project.iam.gserviceaccount.com?uid=110061494507379233892",
+              "deleted:serviceAccount:keda-demo-github-actions@example-project.iam.gserviceaccount.com?uid=112494168589899586285"
+            ],
+            "role": "roles/artifactregistry.writer"
+          },
+          {
+            "members": [
+              "serviceAccount:service-111111111111@gcp-sa-binaryauthorization.iam.gserviceaccount.com"
+            ],
+            "role": "roles/binaryauthorization.serviceAgent"
+          },
+          {
+            "members": [
+              "serviceAccount:111111111111@cloudbuild.gserviceaccount.com"
+            ],
+            "role": "roles/cloudbuild.builds.builder"
+          },
+          {
+            "members": [
+              "serviceAccount:service-111111111111@gcp-sa-cloudbuild.iam.gserviceaccount.com"
+            ],
+            "role": "roles/cloudbuild.serviceAgent"
+          },
+          {
+            "members": [
+              "serviceAccount:service-111111111111@gcp-sa-clouddeploy.iam.gserviceaccount.com"
+            ],
+            "role": "roles/clouddeploy.serviceAgent"
+          },
+          {
+            "members": [
+              "serviceAccount:service-111111111111@gcp-sa-cloudscheduler.iam.gserviceaccount.com"
+            ],
+            "role": "roles/cloudscheduler.serviceAgent"
+          },
+          {
+            "members": [
+              "serviceAccount:111111111111@cloudservices.gserviceaccount.com"
+            ],
+            "role": "roles/compute.instanceGroupManagerServiceAgent"
+          },
+          {
+            "members": [
+              "serviceAccount:service-111111111111@compute-system.iam.gserviceaccount.com"
+            ],
+            "role": "roles/compute.serviceAgent"
+          },
+          {
+            "members": [
+              "deleted:serviceAccount:keda-demo-github-actions@example-project.iam.gserviceaccount.com?uid=110061494507379233892",
+              "deleted:serviceAccount:keda-demo-github-actions@example-project.iam.gserviceaccount.com?uid=112494168589899586285"
+            ],
+            "role": "roles/compute.viewer"
+          },
+          {
+            "members": [
+              "deleted:serviceAccount:keda-demo-github-actions@example-project.iam.gserviceaccount.com?uid=110061494507379233892",
+              "deleted:serviceAccount:keda-demo-github-actions@example-project.iam.gserviceaccount.com?uid=112494168589899586285"
+            ],
+            "role": "roles/container.admin"
+          },
+          {
+            "members": [
+              "serviceAccount:service-111111111111@gcp-sa-gkenode.iam.gserviceaccount.com"
+            ],
+            "role": "roles/container.defaultNodeServiceAgent"
+          },
+          {
+            "members": [
+              "deleted:serviceAccount:keda-demo-github-actions@example-project.iam.gserviceaccount.com?uid=110061494507379233892",
+              "deleted:serviceAccount:keda-demo-github-actions@example-project.iam.gserviceaccount.com?uid=112494168589899586285"
+            ],
+            "role": "roles/container.developer"
+          },
+          {
+            "members": [
+              "serviceAccount:service-111111111111@container-engine-robot.iam.gserviceaccount.com"
+            ],
+            "role": "roles/container.serviceAgent"
+          },
+          {
+            "members": [
+              "serviceAccount:service-111111111111@container-analysis.iam.gserviceaccount.com"
+            ],
+            "role": "roles/containeranalysis.ServiceAgent"
+          },
+          {
+            "members": [
+              "serviceAccount:service-111111111111@containerregistry.iam.gserviceaccount.com"
+            ],
+            "role": "roles/containerregistry.ServiceAgent"
+          },
+          {
+            "members": [
+              "serviceAccount:service-111111111111@gcp-sa-containerscanning.iam.gserviceaccount.com"
+            ],
+            "role": "roles/containerscanning.ServiceAgent"
+          },
+          {
+            "members": [
+              "serviceAccount:service-111111111111@dlp-api.iam.gserviceaccount.com"
+            ],
+            "role": "roles/dlp.serviceAgent"
+          },
+          {
+            "members": [
+              "serviceAccount:ci-runner@example-project.iam.gserviceaccount.com"
+            ],
+            "role": "roles/editor"
+          },
+          {
+            "members": [
+              "serviceAccount:service-111111111111@gcp-sa-eventarc.iam.gserviceaccount.com"
+            ],
+            "role": "roles/eventarc.serviceAgent"
+          },
+          {
+            "members": [
+              "serviceAccount:service-111111111111@cloud-filer.iam.gserviceaccount.com"
+            ],
+            "role": "roles/file.serviceAgent"
+          },
+          {
+            "members": [
+              "serviceAccount:service-111111111111@firebase-rules.iam.gserviceaccount.com"
+            ],
+            "role": "roles/firebaserules.system"
+          },
+          {
+            "members": [
+              "serviceAccount:service-111111111111@gcp-sa-firestore.iam.gserviceaccount.com"
+            ],
+            "role": "roles/firestore.serviceAgent"
+          },
+          {
+            "members": [
+              "serviceAccount:prowler-scanner@example-project.iam.gserviceaccount.com"
+            ],
+            "role": "roles/iam.securityReviewer"
+          },
+          {
+            "members": [
+              "deleted:serviceAccount:keda-demo-github-actions@example-project.iam.gserviceaccount.com?uid=110061494507379233892",
+              "deleted:serviceAccount:keda-demo-github-actions@example-project.iam.gserviceaccount.com?uid=112494168589899586285"
+            ],
+            "role": "roles/iam.serviceAccountAdmin"
+          },
+          {
+            "members": [
+              "deleted:serviceAccount:keda-demo-github-actions@example-project.iam.gserviceaccount.com?uid=110061494507379233892",
+              "deleted:serviceAccount:keda-demo-github-actions@example-project.iam.gserviceaccount.com?uid=112494168589899586285"
+            ],
+            "role": "roles/iam.workloadIdentityPoolAdmin"
+          },
+          {
+            "members": [
+              "deleted:serviceAccount:keda-demo-gke-nodes@example-project.iam.gserviceaccount.com?uid=107823794086702970588",
+              "deleted:serviceAccount:keda-demo-gke-nodes@example-project.iam.gserviceaccount.com?uid=110508501851916550143"
+            ],
+            "role": "roles/logging.logWriter"
+          },
+          {
+            "members": [
+              "serviceAccount:service-111111111111@gcp-sa-logging.iam.gserviceaccount.com"
+            ],
+            "role": "roles/logging.serviceAgent"
+          },
+          {
+            "members": [
+              "deleted:serviceAccount:keda-demo-github-actions@example-project.iam.gserviceaccount.com?uid=110061494507379233892",
+              "deleted:serviceAccount:keda-demo-github-actions@example-project.iam.gserviceaccount.com?uid=112494168589899586285"
+            ],
+            "role": "roles/monitoring.editor"
+          },
+          {
+            "members": [
+              "deleted:serviceAccount:keda-demo-gke-nodes@example-project.iam.gserviceaccount.com?uid=107823794086702970588",
+              "deleted:serviceAccount:keda-demo-gke-nodes@example-project.iam.gserviceaccount.com?uid=110508501851916550143"
+            ],
+            "role": "roles/monitoring.metricWriter"
+          },
+          {
+            "members": [
+              "deleted:serviceAccount:keda-demo-keda-operator@example-project.iam.gserviceaccount.com?uid=106777906538375987555",
+              "deleted:serviceAccount:keda-demo-keda-operator@example-project.iam.gserviceaccount.com?uid=107504672111324737307"
+            ],
+            "role": "roles/monitoring.viewer"
+          },
+          {
+            "members": [
+              "serviceAccount:service-111111111111@gcp-sa-networkconnectivity.iam.gserviceaccount.com"
+            ],
+            "role": "roles/networkconnectivity.serviceAgent"
+          },
+          {
+            "members": [
+              "user:owner@example.com"
+            ],
+            "role": "roles/owner"
+          },
+          {
+            "members": [
+              "deleted:serviceAccount:keda-demo-github-actions@example-project.iam.gserviceaccount.com?uid=110061494507379233892",
+              "deleted:serviceAccount:keda-demo-github-actions@example-project.iam.gserviceaccount.com?uid=112494168589899586285"
+            ],
+            "role": "roles/pubsub.admin"
+          },
+          {
+            "members": [
+              "serviceAccount:service-111111111111@gcp-sa-pubsub.iam.gserviceaccount.com"
+            ],
+            "role": "roles/pubsub.serviceAgent"
+          },
+          {
+            "members": [
+              "deleted:serviceAccount:keda-demo-keda-operator@example-project.iam.gserviceaccount.com?uid=106777906538375987555",
+              "deleted:serviceAccount:keda-demo-keda-operator@example-project.iam.gserviceaccount.com?uid=107504672111324737307"
+            ],
+            "role": "roles/pubsub.viewer"
+          },
+          {
+            "members": [
+              "serviceAccount:service-111111111111@serverless-robot-prod.iam.gserviceaccount.com"
+            ],
+            "role": "roles/run.serviceAgent"
+          },
+          {
+            "members": [
+              "serviceAccount:prowler-scanner@example-project.iam.gserviceaccount.com"
+            ],
+            "role": "roles/viewer"
+          },
+          {
+            "members": [
+              "serviceAccount:service-111111111111@gcp-sa-workflows.iam.gserviceaccount.com"
+            ],
+            "role": "roles/workflows.serviceAgent"
+          }
+        ]
+      }
+    },
+    {
+      "asset_type": "storage.googleapis.com/Bucket",
+      "name": "//storage.googleapis.com/example-project-keda-demo-tfstate",
+      "policy": {
+        "bindings": [
+          {
+            "members": [
+              "projectEditor:example-project",
+              "projectOwner:example-project"
+            ],
+            "role": "roles/storage.legacyBucketOwner"
+          },
+          {
+            "members": [
+              "projectViewer:example-project"
+            ],
+            "role": "roles/storage.legacyBucketReader"
+          },
+          {
+            "members": [
+              "projectEditor:example-project",
+              "projectOwner:example-project"
+            ],
+            "role": "roles/storage.legacyObjectOwner"
+          },
+          {
+            "members": [
+              "projectViewer:example-project"
+            ],
+            "role": "roles/storage.legacyObjectReader"
+          },
+          {
+            "members": [
+              "deleted:serviceAccount:keda-demo-github-actions@example-project.iam.gserviceaccount.com?uid=110061494507379233892",
+              "deleted:serviceAccount:keda-demo-github-actions@example-project.iam.gserviceaccount.com?uid=112494168589899586285"
+            ],
+            "role": "roles/storage.objectAdmin"
+          }
+        ]
+      }
+    },
+    {
+      "asset_type": "storage.googleapis.com/Bucket",
+      "name": "//storage.googleapis.com/example-project-tfstate",
+      "policy": {
+        "bindings": [
+          {
+            "members": [
+              "projectEditor:example-project",
+              "projectOwner:example-project"
+            ],
+            "role": "roles/storage.legacyBucketOwner"
+          },
+          {
+            "members": [
+              "projectViewer:example-project"
+            ],
+            "role": "roles/storage.legacyBucketReader"
+          },
+          {
+            "members": [
+              "projectEditor:example-project",
+              "projectOwner:example-project"
+            ],
+            "role": "roles/storage.legacyObjectOwner"
+          },
+          {
+            "members": [
+              "projectViewer:example-project"
+            ],
+            "role": "roles/storage.legacyObjectReader"
+          }
+        ]
+      }
+    }
+  ]
+}

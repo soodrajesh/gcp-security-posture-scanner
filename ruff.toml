@@ -1,0 +1,7 @@
+line-length = 140
+
+[lint]
+select = ["E", "F", "I", "B", "UP"]
+
+[lint.per-file-ignores]
+"app/ui/main.py" = ["E501"]  # the HTML/CSS template is deliberately one dense block

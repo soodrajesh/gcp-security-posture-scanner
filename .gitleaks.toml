@@ -1,0 +1,8 @@
+title = "posture-scanner"
+
+[extend]
+useDefault = true
+
+[allowlist]
+description = "The inventory fixture is a sanitised Cloud Asset capture: `keyAlgorithm: KEY_ALG_RSA_2048` is a field name/value, not a secret."
+paths = ['''app/tests/fixtures/inventory_sample\.json''']
