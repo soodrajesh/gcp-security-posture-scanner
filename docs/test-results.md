@@ -1,6 +1,6 @@
 # Live test results
 
-Captured output of `./scripts/test.sh` against the deployed scanner in project `claude-code-507112` (europe-west1) on 2026-09-28: **45 passed, 0 failed**. Nothing below is edited except stripping colour codes.
+Captured output of `./scripts/test.sh` against the deployed scanner in project `claude-code-507112` (europe-west1) on 2026-09-28: **45 passed, 0 failed** (the same 45/45 was reproduced on a second run after the final image rebuild). Nothing below is edited except stripping colour codes.
 
 ```
 ==> 1. Infrastructure
